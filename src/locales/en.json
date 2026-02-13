@@ -1,0 +1,53 @@
+{
+  "navbar": {
+    "about": "About Us",
+    "collections": "Collections",
+    "gallery": "The Gallery",
+    "contact": "Contact",
+    "inquire": "INQUIRE"
+  },
+  "hero": {
+    "subtitle": "JEWELRY · DIAMOND · FINE GOLD · PEARL",
+    "title": "Timeless Elegance",
+    "title2": "in Every Detail.",
+    "desc": "Experience a curated selection of fine gold and exquisite diamonds in our Cheonan-si gallery. Where modern minimalism meets classic craftsmanship.",
+    "cta": "View Collections",
+    "visit": "Visit Store"
+  },
+  "about": {
+    "subtitle": "THE ABEL EXPERIENCE",
+    "title": "A Modern Sanctuary for Fine Gold.",
+    "desc": "Our gallery in Chungcheongnam-do is designed with a minimalist aesthetic, allowing the natural brilliance of our gems and precious metals to take center stage. From our signature 'Abel Blue' diamond logo to our warm, inviting showroom.",
+    "point1": "Certified Premium Diamonds",
+    "point2": "18k & 24k Fine Gold Selection",
+    "point3": "Bespoke Jewelry Consultation"
+  },
+  "collections": {
+    "title": "The Collections",
+    "item1": {
+      "title": "Bridal & Engagement",
+      "sub": "DISCOVER THE ONE"
+    },
+    "item2": {
+      "title": "Heritage Gold",
+      "sub": "24K PURITY"
+    },
+    "item3": {
+      "title": "Ocean's Grace",
+      "sub": "SOUTH SEA PEARLS"
+    }
+  },
+  "gallery": {
+    "subtitle": "ATMOSPHERE",
+    "title": "The Cheonan Gallery",
+    "desc": "Step into a space where time slows down. Our showroom is designed to provide a private, serene environment for your most important selections.",
+    "follow": "FOLLOW @ABELJEWELS"
+  },
+  "contact": {
+    "title": "Let's find your",
+    "match": "perfect match.",
+    "visit": "Visit Our Gallery",
+    "private_desc": "We offer private consultations for engagement and custom designs. Please call to schedule an appointment.",
+    "chat": "Speak with a Consultant"
+  }
+}
