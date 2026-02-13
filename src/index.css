@@ -1,3 +1,36 @@
+/* Netlify Horizontal Scroll Fix */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Chakra Portal & Toast Fix */
+.chakra-portal {
+  width: 100%;
+  max-width: 100%;
+}
+
+[role="region"][aria-label*="Notifications"] {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* ================ ORIGINAL VITE STYLES (KEEP) ================ */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
