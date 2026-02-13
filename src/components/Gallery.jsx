@@ -59,6 +59,8 @@ export default function Gallery() {
           {/* Large Left Image */}
           <GridItem colSpan={1} rowSpan={2} h="100%">
             <Image
+               loading="lazy" 
+                  decoding="async"
               src="/assets/gallery/gallery1.webp"
               alt="Gallery Interior Large"
               w="100%"
@@ -72,6 +74,8 @@ export default function Gallery() {
             {/* Top Left Small */}
             <Box flex="1" h="100%">
                <Image
+                  loading="lazy" 
+                  decoding="async"
                 src="/assets/gallery/gallery2.webp"
                 alt="Storefront"
                 w="100%"
@@ -82,6 +86,8 @@ export default function Gallery() {
             {/* Top Right Small */}
             <Box flex="1" h="100%">
                <Image
+                  loading="lazy" 
+                  decoding="async"
                 src="/assets/gallery/gallery3.webp"
                 alt="Seating Area"
                 w="100%"
@@ -94,6 +100,8 @@ export default function Gallery() {
           {/* Bottom Full Width (Under the two small ones) */}
            <GridItem colSpan={1}>
             <Image
+               loading="lazy" 
+                  decoding="async"
               src="/assets/gallery/gallery4.webp"
               alt="Jewelry Display"
               w="100%"

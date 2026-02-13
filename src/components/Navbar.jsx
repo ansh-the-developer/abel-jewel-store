@@ -81,6 +81,8 @@ export default function Navbar() {
           {/* LOGO */}
           <Link href="/" _hover={{ opacity: 0.8 }}>
             <Image 
+               loading="lazy" 
+                  decoding="async"
               src="/assets/logo.webp" 
               alt="Abel Jewelry" 
               h="40px" 
@@ -134,7 +136,7 @@ export default function Navbar() {
             {/* Mobile Burger */}
             <IconButton
               display={{ base: 'flex', md: 'none' }}
-              aria-label="Open menu"
+              aria-label="Open navigation menu" 
               icon={<HamburgerIcon boxSize={6} />}
               variant="ghost"
               onClick={onOpen}

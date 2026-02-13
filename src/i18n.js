@@ -6,14 +6,17 @@ import en from './locales/en.json';
 import ko from './locales/ko.json';
 
 i18n
-  .use(LanguageDetector) //  Enable auto-detection
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
-      en: { translation: en },
-      ko: { translation: ko },
+      // ✅ REVERSED: English browsers get Korean content
+      en: { translation: ko },
+      // ✅ REVERSED: Korean browsers get English content  
+      ko: { translation: en },
     },
-    fallbackLng: 'en', // Default if detection fails
+    // ✅ Default to English detection (which shows Korean content)
+    fallbackLng: 'en',
     debug: false,
     
     detection: {
@@ -21,9 +24,7 @@ i18n
       // 2. Check LocalStorage (saved preference)
       // 3. Check Browser Settings (navigator)
       order: ['querystring', 'localStorage', 'navigator', 'htmlTag'],
-      
-      // Cache the user's choice in localStorage
-      caches: ['localStorage'], 
+      caches: ['localStorage'],
     },
 
     interpolation: {

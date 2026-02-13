@@ -1,16 +1,27 @@
-import { Box, Container, Flex, Heading, Text, Stack, Image, List, ListItem, ListIcon } from '@chakra-ui/react';
-import { useTranslation } from 'react-i18next';
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Text,
+  Stack,
+  Image,
+  List,
+  ListItem,
+  ListIcon,
+} from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 // Custom Gold Dot Icon for the list
 const GoldDot = () => (
-  <Box 
-    as="span" 
-    w="6px" 
-    h="6px" 
-    borderRadius="full" 
-    bg="abel.gold" 
-    display="inline-block" 
-    mr={3} 
+  <Box
+    as="span"
+    w="6px"
+    h="6px"
+    borderRadius="full"
+    bg="abel.gold"
+    display="inline-block"
+    mr={3}
     mb="2px"
   />
 );
@@ -21,8 +32,12 @@ export default function About() {
   return (
     <Box as="section" id="about" py={20} bg="white">
       <Container maxW="container.xl">
-        <Flex direction={{ base: 'column', lg: 'row' }} align="center" justify="space-between" gap={16}>
-          
+        <Flex
+          direction={{ base: "column", lg: "row" }}
+          align="center"
+          justify="space-between"
+          gap={16}
+        >
           {/* LEFT CONTENT */}
           <Box flex="1" maxW="lg">
             <Text
@@ -33,7 +48,7 @@ export default function About() {
               textTransform="uppercase"
               mb={4}
             >
-              {t('about.subtitle', 'THE ABEL EXPERIENCE')}
+              {t("about.subtitle", "THE ABEL EXPERIENCE")}
             </Text>
 
             <Heading
@@ -45,25 +60,43 @@ export default function About() {
               lineHeight="1.2"
               mb={6}
             >
-              {t('about.title', 'A Modern Sanctuary for Fine Gold.')}
+              {t("about.title", "A Modern Sanctuary for Fine Gold.")}
             </Heading>
 
             <Text color="gray.600" lineHeight="1.8" mb={8}>
-              {t('about.desc', 'Our gallery in Chungcheongnam-do is designed with a minimalist aesthetic, allowing the natural brilliance of our gems and precious metals to take center stage. From our signature "Abel Blue" diamond logo to our warm, inviting showroom.')}
+              {t(
+                "about.desc",
+                'Our gallery in Chungcheongnam-do is designed with a minimalist aesthetic, allowing the natural brilliance of our gems and precious metals to take center stage. From our signature "Abel Blue" diamond logo to our warm, inviting showroom.',
+              )}
             </Text>
 
             <List spacing={4}>
-              <ListItem display="flex" alignItems="center" color="abel.dark" fontWeight="500">
+              <ListItem
+                display="flex"
+                alignItems="center"
+                color="abel.dark"
+                fontWeight="500"
+              >
                 <GoldDot />
-                {t('about.point1', 'Certified Premium Diamonds')}
+                {t("about.point1", "Certified Premium Diamonds")}
               </ListItem>
-              <ListItem display="flex" alignItems="center" color="abel.dark" fontWeight="500">
+              <ListItem
+                display="flex"
+                alignItems="center"
+                color="abel.dark"
+                fontWeight="500"
+              >
                 <GoldDot />
-                {t('about.point2', '18k & 24k Fine Gold Selection')}
+                {t("about.point2", "18k & 24k Fine Gold Selection")}
               </ListItem>
-              <ListItem display="flex" alignItems="center" color="abel.dark" fontWeight="500">
+              <ListItem
+                display="flex"
+                alignItems="center"
+                color="abel.dark"
+                fontWeight="500"
+              >
                 <GoldDot />
-                {t('about.point3', 'Bespoke Jewelry Consultation')}
+                {t("about.point3", "Bespoke Jewelry Consultation")}
               </ListItem>
             </List>
           </Box>
@@ -73,8 +106,10 @@ export default function About() {
             <Flex gap={6} align="flex-start">
               
               {/* Image 1 (Higher) */}
-              <Box flex="1" mt={0}> 
+              <Box flex="1" mt={0}>
                 <Image
+                  loading="lazy" 
+                  decoding="async"
                   src="/assets/about 1.avif"
                   alt="Pearl Necklace"
                   w="100%"
@@ -85,8 +120,10 @@ export default function About() {
               </Box>
 
               {/* Image 2 (Lower - Offset by margin) */}
-              <Box flex="1" mt={16}> 
+              <Box flex="1" mt={16}>
                 <Image
+                  loading="lazy" 
+                  decoding="async"
                   src="/assets/about 2.avif"
                   alt="Gold Necklace"
                   w="100%"
@@ -95,10 +132,8 @@ export default function About() {
                   shadow="lg"
                 />
               </Box>
-
             </Flex>
           </Box>
-
         </Flex>
       </Container>
     </Box>

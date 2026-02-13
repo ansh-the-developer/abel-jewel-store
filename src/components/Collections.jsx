@@ -1,17 +1,28 @@
-import { Box, Container, Heading, Text, SimpleGrid, Image, VStack, Link } from '@chakra-ui/react';
-import { useTranslation } from 'react-i18next';
+import {
+  Box,
+  Container,
+  Heading,
+  Text,
+  SimpleGrid,
+  Image,
+  VStack,
+  Link,
+} from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 const CollectionItem = ({ img, title, subtitle }) => (
   // REMOVED 'group' prop here to fix the warning
-  <Link href="#" _hover={{ textDecoration: 'none' }}>
+  <Link href="#" _hover={{ textDecoration: "none" }}>
     <VStack align="start" spacing={4} cursor="pointer" role="group">
       {/* Image Container with Zoom Effect */}
       <Box overflow="hidden" w="100%">
         <Image
+          loading="lazy"
+          decoding="async"
           src={img}
           alt={title}
           w="100%"
-          h="400px" 
+          h="400px"
           objectFit="cover"
           transition="transform 0.5s ease"
           _groupHover={{ transform: "scale(1.05)" }}
@@ -53,25 +64,24 @@ export default function Collections() {
   const collections = [
     {
       img: "/assets/gallery/c1.avif",
-      title: t('collections.item1.title', 'Bridal & Engagement'),
-      subtitle: t('collections.item1.sub', 'DISCOVER THE ONE'),
+      title: t("collections.item1.title", "Bridal & Engagement"),
+      subtitle: t("collections.item1.sub", "DISCOVER THE ONE"),
     },
     {
       img: "/assets/gallery/c2.avif",
-      title: t('collections.item2.title', 'Heritage Gold'),
-      subtitle: t('collections.item2.sub', '24K PURITY'),
+      title: t("collections.item2.title", "Heritage Gold"),
+      subtitle: t("collections.item2.sub", "24K PURITY"),
     },
     {
       img: "/assets/gallery/c3.avif",
-      title: t('collections.item3.title', "Ocean's Grace"),
-      subtitle: t('collections.item3.sub', 'SOUTH SEA PEARLS'),
-    }
+      title: t("collections.item3.title", "Ocean's Grace"),
+      subtitle: t("collections.item3.sub", "SOUTH SEA PEARLS"),
+    },
   ];
 
   return (
     <Box as="section" id="collections" py={20} bg="white">
       <Container maxW="container.xl">
-        
         {/* Section Header */}
         <VStack mb={16} spacing={2}>
           <Heading
@@ -81,7 +91,7 @@ export default function Collections() {
             color="abel.dark"
             fontWeight="400"
           >
-            {t('collections.title', 'The Collections')}
+            {t("collections.title", "The Collections")}
           </Heading>
           <Box w="40px" h="1px" bg="abel.gold" />
         </VStack>
@@ -92,7 +102,6 @@ export default function Collections() {
             <CollectionItem key={index} {...item} />
           ))}
         </SimpleGrid>
-
       </Container>
     </Box>
   );

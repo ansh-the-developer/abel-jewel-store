@@ -1,11 +1,13 @@
-import { Box, Heading, Text, Button, Stack, Container } from '@chakra-ui/react';
-import { useTranslation } from 'react-i18next';
+import { Box, Heading, Text, Button, Stack, Container } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
   const { t } = useTranslation();
 
   return (
     <Box
+      loading="lazy"
+      decoding="async"
       as="section"
       id="home"
       position="relative"
@@ -18,7 +20,7 @@ export default function Hero() {
       justifyContent="center"
       _before={{
         content: '""',
-        position: 'absolute',
+        position: "absolute",
         top: 0,
         left: 0,
         right: 0,
@@ -30,8 +32,13 @@ export default function Hero() {
         zIndex: 0,
       }}
     >
-      <Container maxW="container.lg" zIndex="1" position="relative" textAlign="center" pt={20}>
-        
+      <Container
+        maxW="container.lg"
+        zIndex="1"
+        position="relative"
+        textAlign="center"
+        pt={20}
+      >
         {/* Top Gold Tagline */}
         <Text
           color="abel.gold"
@@ -42,7 +49,7 @@ export default function Hero() {
           textTransform="uppercase"
           mb={4}
         >
-          {t('hero.subtitle', 'JEWELRY · DIAMOND · FINE GOLD · PEARL')}
+          {t("hero.subtitle", "JEWELRY · DIAMOND · FINE GOLD · PEARL")}
         </Text>
 
         {/* Main Headline with Custom Font Sizes */}
@@ -53,12 +60,12 @@ export default function Hero() {
           color="abel.dark"
           // Mobile: .text-5xl (3rem)
           // Desktop: .md:text-7xl (4.5rem)
-          fontSize={{ base: "3rem", md: "4.5rem" }} 
-          lineHeight="1" 
+          fontSize={{ base: "3rem", md: "4.5rem" }}
+          lineHeight="1"
           mb="1.5rem" // .mb-6
         >
-          {t('hero.title', 'Timeless Elegance')} <br />
-          {t('hero.title2', 'in Every Detail.')}
+          {t("hero.title", "Timeless Elegance")} <br />
+          {t("hero.title2", "in Every Detail.")}
         </Heading>
 
         {/* Description Text */}
@@ -70,12 +77,15 @@ export default function Hero() {
           mb={10}
           lineHeight="1.8"
         >
-          {t('hero.desc', 'Experience a curated selection of fine gold and exquisite diamonds in our Cheonan-si gallery. Where modern minimalism meets classic craftsmanship.')}
+          {t(
+            "hero.desc",
+            "Experience a curated selection of fine gold and exquisite diamonds in our Cheonan-si gallery. Where modern minimalism meets classic craftsmanship.",
+          )}
         </Text>
 
         {/* Buttons */}
         <Stack
-          direction={{ base: 'column', md: 'row' }}
+          direction={{ base: "column", md: "row" }}
           spacing={4}
           justify="center"
           align="center"
@@ -95,7 +105,7 @@ export default function Hero() {
             borderRadius="none"
             _hover={{ bg: "gray.800" }}
           >
-            {t('hero.cta', 'View Collections')}
+            {t("hero.cta", "View Collections")}
           </Button>
 
           {/* Secondary Button */}
@@ -114,7 +124,7 @@ export default function Hero() {
             borderRadius="none"
             _hover={{ bg: "black", color: "white" }}
           >
-            {t('hero.visit', 'Visit Store')}
+            {t("hero.visit", "Visit Store")}
           </Button>
         </Stack>
       </Container>
