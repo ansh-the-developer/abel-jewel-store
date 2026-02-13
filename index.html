@@ -2,13 +2,63 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <!-- PERFORMANCE: Preload Critical Resources -->
     <link rel="preload" href="/assets/hero.webp" as="image" />
+    <link rel="preload" href="/assets/logo.webp" as="image" />
+    <link rel="preload" href="/src/index.css" as="style" />
+    
+    <!-- CORE META TAGS -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>abel-react</title>
+    <title>Abel Jewelry | Fine Gold & Diamonds in Cheonan</title>
+    
+    <!-- SEO: Essential Meta Tags -->
+    <meta name="description" content="Experience timeless elegance with Abel Jewelry's curated selection of fine gold, diamonds, and pearls in Cheonan-si. Bespoke designs and premium craftsmanship." />
+    <meta name="keywords" content="jewelry, gold, diamond, Cheonan, Korea, luxury, ring, necklace, wedding, engagement" />
+    
+    <!-- OPEN GRAPH (Social Media Previews) -->
+    <meta property="og:title" content="Abel Jewelry | Timeless Elegance in Cheonan" />
+    <meta property="og:description" content="Fine gold and diamond sanctuary in Cheonan-si. Premium craftsmanship meets modern minimalism." />
+    <meta property="og:image" content="/assets/hero.webp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://abeljewelry.com" />
+    
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Abel Jewelry | Timeless Elegance" />
+    <meta name="twitter:description" content="Curated fine gold and diamonds in Cheonan-si." />
+    <meta name="twitter:image" content="/assets/hero.webp" />
+    
+    <!-- FAVICONS (SEO + Branding) -->
+    <link rel="icon" type="image/webp" href="/assets/logo.webp" />
+    <link rel="apple-touch-icon" href="/assets/logo.webp" />
+    
+    <!-- FONT PRELOADS (Performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- DNS Prefetch (Faster CDN Loading) -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    
+    <!-- CANONICAL URL (SEO) -->
+    <link rel="canonical" href="https://abeljewelry.com" />
+    
+    <!-- ROBOTS (SEO) -->
+    <meta name="robots" content="index,follow" />
+    
   </head>
   <body>
+    <!-- PERFORMANCE: Script Loading Strategy -->
+    <noscript>
+      <div style="padding: 2rem; text-align: center; background: #f5f5f5;">
+        JavaScript is required to view this site. Please enable JavaScript in your browser.
+      </div>
+    </noscript>
+    
     <div id="root"></div>
+    
+    <!-- DEFER SCRIPT LOADING (Performance) -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
