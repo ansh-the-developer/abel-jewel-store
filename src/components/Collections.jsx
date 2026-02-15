@@ -68,13 +68,13 @@ export default function Collections() {
       subtitle: t("collections.item1.sub", "DISCOVER THE ONE"),
     },
     {
-      img: "/assets/gallery/c2.avif",
-      title: t("collections.item2.title", "Heritage Gold"),
+      img: "/assets/gallery/n1.jpeg",
+      title: t("collections.item2.title", "Earring"),
       subtitle: t("collections.item2.sub", "24K PURITY"),
     },
     {
-      img: "/assets/gallery/c3.avif",
-      title: t("collections.item3.title", "Ocean's Grace"),
+      img: "/assets/gallery/n2.jpeg",
+      title: t("collections.item3.title", "Necklace"),
       subtitle: t("collections.item3.sub", "SOUTH SEA PEARLS"),
     },
   ];
