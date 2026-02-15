@@ -10,10 +10,8 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      // ✅ REVERSED: English browsers get Korean content
-      en: { translation: ko },
-      // ✅ REVERSED: Korean browsers get English content  
-      ko: { translation: en },
+      en: { translation: en },
+      ko: { translation: ko },
     },
     // ✅ Default to English detection (which shows Korean content)
     fallbackLng: 'en',
