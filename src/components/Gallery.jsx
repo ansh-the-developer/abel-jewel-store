@@ -36,8 +36,8 @@ export default function Gallery() {
             </Text>
           </Box>
           
-          <Link 
-            href="https://instagram.com/abeljewels" 
+          {/* <Link 
+            href="https://instagram.com/s" 
             isExternal
             fontSize="xs"
             fontWeight="600"
@@ -47,7 +47,7 @@ export default function Gallery() {
             _hover={{ color: "abel.gold" }}
           >
             {t('gallery.follow', 'FOLLOW @ABELJEWELS')}
-          </Link>
+          </Link> */}
         </Flex>
 
         {/* Bento Grid Gallery */}
